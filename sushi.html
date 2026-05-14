@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🥬 蔬菜素食｜小吃配方网盘教程</title>
+<meta name="description" content="🥬 蔬菜素食全套配方，商用摆摊/家用教程，网盘链接+提取码">
+<meta name="keywords" content="🥬 蔬菜素食,小吃配方,网盘教程">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://sunnyluostore.github.io/snack-recipes.github.io/sushi.html">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+.goog-te-banner-frame.skiptranslate {display:none !important;}
+body {top:0 !important;}
+.tips {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+    line-height: 1.4;
+}
+</style>
+</head>
+<body>
+<div class="container text-end mt-2">
+<div id="google_translate_element"></div>
+</div>
+<div class="container py-4">
+<a href="index.html" class="btn btn-sm btn-outline-secondary mb-3">← 返回首页</a>
+<h2 class="text-center mb-3">🥬 蔬菜素食</h2>
+<div class="input-group mb-4">
+<input id="search" class="form-control" placeholder="搜索当前分类">
+<button class="btn btn-primary" onclick="render()">搜索</button>
+</div>
+<div id="list" class="list-group"></div>
+</div>
+<footer class="container text-center py-3 text-muted">
+© 2026 小吃配方资源库｜仅供学习交流
+</footer>
+<script>
+const data = [{"name": "菜煎饼技术配方教程", "link": "https://pan.baidu.com/s/1HeGyk02nrkUW0VeczH2i8g?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["素食", "面点", "烘焙"]}, {"name": "餐饮特色菜品技术配方教程", "link": "https://pan.baidu.com/s/1nPzPbTo3cOdq4x0cSVkjBg?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["素食"]}, {"name": "春饼+土豆丝卷饼技术配方教程", "link": "https://pan.baidu.com/s/1GjDROndkg_do7DQ-zFvZSA?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["素食", "面点", "烘焙"]}, {"name": "黄金土豆饼配方技术配方教程", "link": "https://pan.baidu.com/s/1E0vymmSk_ZgCZOh1tmEWsQ?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["素食", "面点", "烘焙"]}, {"name": "浇汁土豆泥～爆款技术配方教程", "link": "https://pan.baidu.com/s/1kpaUY8RI9hTkpmKbk8YOeg?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["素食"]}, {"name": "九尊养生蒸菜技术配方教程", "link": "https://pan.baidu.com/s/1MSqGFoFT_L6Fh7yXBJWAcg?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["素食"]}, {"name": "凯恩荷包洋芋技术配方教程", "link": "https://pan.baidu.com/s/1cNcCY_PxiLtEmO25pEte7A?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["素食"]}, {"name": "凉菜技术配方教程", "link": "https://pan.baidu.com/s/1Hm91eiWXI1hvcQ28HF4JVQ?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["素食", "凉菜", "凉拌"]}, {"name": "轻食【汇总】技术配方教程", "link": "https://pan.baidu.com/s/1pVHtQKodyC4ISFLevY885g?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["素食"]}, {"name": "轻食餐技术配方教程", "link": "https://pan.baidu.com/s/1e2si11tX_9Ynbmv2nCr83Q?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["素食"]}, {"name": "天沐彬哥特色砂锅菜品技术配方教程", "link": "https://pan.baidu.com/s/1gOjluiRwNrsJGUgXzQ2tNA?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["素食", "砂锅"]}, {"name": "锡纸烧烤菜技术配方教程", "link": "https://pan.baidu.com/s/1ln_JA1IjOcu3kEcz7TZ7RQ?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["素食", "烧烤"]}, {"name": "小敏烤苕技术配方教程", "link": "https://pan.baidu.com/s/1-2RjvmKvdxDEQOc_E10sLA?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["素食", "烧烤", "烘焙"]}, {"name": "新版酸菜鱼系列技术配方教程", "link": "https://pan.baidu.com/s/1ffSWWApMeLWOUCeXh7LguA?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["海鲜", "素食"]}, {"name": "腌菜大全套技术配方教程", "link": "https://pan.baidu.com/s/15yqJGQ5MYFGSvUi0gl1gZg?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["素食", "凉菜", "凉拌"]}, {"name": "延边菜技术配方教程", "link": "https://pan.baidu.com/s/1AXhUCCxMyT_w8lCRzdkh8A?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["素食", "凉拌"]}, {"name": "养生八珍糕坚果糯米糕技术配方教程", "link": "https://pan.baidu.com/s/1ej1d4_Z4MFpFaztD67zchg?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["素食", "烘焙"]}, {"name": "姚先生浏阳蒸菜技术配方教程", "link": "https://pan.baidu.com/s/1wN-2dZC_3GcY36aG-er0zA?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["素食"]}, {"name": "重庆江湖菜系列技术配方教程", "link": "https://pan.baidu.com/s/1zIoEuGF8SqJY-qzyGcdmVg?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["素食", "火锅"]}];
+function render() {
+const kw = document.getElementById('search').value.trim().toLowerCase();
+const res = data.filter(x=>x.name.toLowerCase().includes(kw));
+const list = document.getElementById('list');
+let html='';
+res.forEach(x=>{
+html+=`<div class="list-group-item">
+<div>${x.name}</div>
+<small>提取码：${x.pwd}</small><br>
+<a href="${x.link}" target="_blank" class="d-block my-2">获得该菜品百度网盘视频教学和配方文件</a>
+<div class="tips">温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间</div>
+</div>`;
+});
+list.innerHTML=html||'<div class="alert alert-info">暂无</div>';
+}
+render();
+</script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+new google.translate.TranslateElement({
+pageLanguage: 'zh-CN',
+includedLanguages: 'en,ja,ko,fr,de,es,pt,ru,ar,th,vi,id,ms,it,nl,pl,sv,tr,da,fi',
+layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🥧 烘焙点心｜小吃配方网盘教程</title>
+<meta name="description" content="🥧 烘焙点心全套配方，商用摆摊/家用教程，网盘链接+提取码">
+<meta name="keywords" content="🥧 烘焙点心,小吃配方,网盘教程">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://sunnyluostore.github.io/snack-recipes.github.io/hongbei.html">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+.goog-te-banner-frame.skiptranslate {display:none !important;}
+body {top:0 !important;}
+.tips {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+    line-height: 1.4;
+}
+</style>
+</head>
+<body>
+<div class="container text-end mt-2">
+<div id="google_translate_element"></div>
+</div>
+<div class="container py-4">
+<a href="index.html" class="btn btn-sm btn-outline-secondary mb-3">← 返回首页</a>
+<h2 class="text-center mb-3">🥧 烘焙点心</h2>
+<div class="input-group mb-4">
+<input id="search" class="form-control" placeholder="搜索当前分类">
+<button class="btn btn-primary" onclick="render()">搜索</button>
+</div>
+<div id="list" class="list-group"></div>
+</div>
+<footer class="container text-center py-3 text-muted">
+© 2026 小吃配方资源库｜仅供学习交流
+</footer>
+<script>
+const data = [{"name": "菜煎饼技术配方教程", "link": "https://pan.baidu.com/s/1HeGyk02nrkUW0VeczH2i8g?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["素食", "面点", "烘焙"]}, {"name": "传统老式鸡蛋糕技术配方教程", "link": "https://pan.baidu.com/s/1xQWr6Q2rFNeJg2dsPyYpTw?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["烘焙"]}, {"name": "春饼+土豆丝卷饼技术配方教程", "link": "https://pan.baidu.com/s/1GjDROndkg_do7DQ-zFvZSA?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["素食", "面点", "烘焙"]}, {"name": "达美乐披萨技术配方教程", "link": "https://pan.baidu.com/s/1QhnKF-HITA3M1X6dtII5rw?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["烘焙"]}, {"name": "大全煎饼果子技术配方教程", "link": "https://pan.baidu.com/s/1OSywNL8rDZvhIxaI5IWEKg?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面点", "烘焙"]}, {"name": "风向日本烘焙课技术配方教程", "link": "https://pan.baidu.com/s/1op8-UcugQuwByKYBmgn0Dw?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["烘焙"]}, {"name": "蜂蜜小面包技术配方教程", "link": "https://pan.baidu.com/s/1vpA7P9hJEYxVykW0COq_CA?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面食", "烘焙"]}, {"name": "哈尔滨烧饼+鞋底烧饼技术配方教程", "link": "https://pan.baidu.com/s/1RWO4hFcyrCChOq8HN8y-zQ?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面点", "烘焙"]}, {"name": "烘焙技术配方教程", "link": "https://pan.baidu.com/s/1laZ9XP_DHGtRyeUSu9dirA?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["烘焙"]}, {"name": "红豆沙课程技术配方教程", "link": "https://pan.baidu.com/s/10SpxRzDl6SFoX21iXMvOBw?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["烘焙"]}, {"name": "欢心披萨技术配方教程", "link": "https://pan.baidu.com/s/1yPHkpkS0OfD51QaFHoKyOA?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["烘焙"]}, {"name": "黄金土豆饼配方技术配方教程", "link": "https://pan.baidu.com/s/1E0vymmSk_ZgCZOh1tmEWsQ?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["素食", "面点", "烘焙"]}, {"name": "缙云烧饼技术配方教程", "link": "https://pan.baidu.com/s/1IOyy5Op_m4S_9lSe-VKGUQ?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面点", "烘焙"]}, {"name": "卷饼技术配方教程", "link": "https://pan.baidu.com/s/13vm3WI_62QWpnE9C2wi2Jg?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面点", "烘焙"]}, {"name": "卷饼炸串—舌品技术配方教程", "link": "https://pan.baidu.com/s/1_15JdittskIaoKS_gfUGAg?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面点", "油炸", "烘焙"]}, {"name": "开封济公切糕技术配方教程", "link": "https://pan.baidu.com/s/1JLNs0LU3uCt0oW3U5xRgLA?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["烘焙"]}, {"name": "可颂焦糖蛋挞技术配方教程", "link": "https://pan.baidu.com/s/1XHZ7kba1TC4g51zKSjC_Lg?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["烘焙"]}, {"name": "老面炸油饼技术配方教程", "link": "https://pan.baidu.com/s/1ldwwNbKIdQ5b-q8UYtYPSw?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面点", "油炸", "面食", "烘焙"]}, {"name": "牛魔王香酥鸡蛋灌饼技术配方教程", "link": "https://pan.baidu.com/s/1Sa0UmDUw4eFSiKaAlHJXIA?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["牛肉", "面点", "烘焙"]}, {"name": "胖东来福饼技术配方教程", "link": "https://pan.baidu.com/s/1ONunW9IWreQ5ncK4FEMNcQ?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面点", "烘焙"]}, {"name": "披萨技术配方教程", "link": "https://pan.baidu.com/s/13CiT8LrGufALjEUEfp5xnA?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["烘焙"]}, {"name": "千层饼技术配方教程", "link": "https://pan.baidu.com/s/1hMZjnSa_mCvyHr9XeEQINA?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面点", "烘焙"]}, {"name": "千层麻花技术配方教程", "link": "https://pan.baidu.com/s/1yqW33ir4U2xvCYkDkr-1hg?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["烘焙"]}, {"name": "全套炸麻花技术配方教程", "link": "https://pan.baidu.com/s/1kRJPAKWt3EwEz3sHlqjFZQ?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["油炸", "烘焙"]}, {"name": "日式调理包烘焙技术配方教程", "link": "https://pan.baidu.com/s/1sN1diRZGwfp81IIGFKnb0Q?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["烘焙"]}, {"name": "三十多款吐司技术配方教程", "link": "https://pan.baidu.com/s/17XeNwXh4T24Sih4HuJT-Og?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["烘焙"]}, {"name": "沙拉煎饼技术配方教程", "link": "https://pan.baidu.com/s/1ewh4y8oLLL9xAM0M5gQnZg?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面点", "烘焙"]}, {"name": "商业版-宁波水塔糕技术配方教程", "link": "https://pan.baidu.com/s/1rx-B3Xf6NMzwXt1P2ybXtw?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["烘焙"]}, {"name": "十款麻花技术配方教程", "link": "https://pan.baidu.com/s/173kHOKD61l0TyBIREHQB5w?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["烘焙"]}, {"name": "手作铜锣烧全套技术技术配方教程", "link": "https://pan.baidu.com/s/1APSl8P7eJjJTybgOx__xwQ?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["烘焙"]}, {"name": "水果可颂蛋挞网红爆款技术配方教程", "link": "https://pan.baidu.com/s/1lAeFxFGiuIItVh82uVjJtQ?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["烘焙"]}, {"name": "糖炒栗子技术配方教程", "link": "https://pan.baidu.com/s/1mkujookv8-dX8r-AaF2bxg?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["烘焙"]}, {"name": "糖葫芦技术配方教程", "link": "https://pan.baidu.com/s/1BKzqxtVUwuenc5aJUrzxvA?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["烘焙"]}, {"name": "糖油果子技术配方教程", "link": "https://pan.baidu.com/s/1Gafa2IfA0rYmCXx1rgICrg?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["油炸", "烘焙"]}, {"name": "土家鲜肉饼技术配方教程", "link": "https://pan.baidu.com/s/1H8GKSD_KPaZoyA1BriVDlQ?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面点", "烘焙"]}, {"name": "网红玉米蛋挞技术配方教程", "link": "https://pan.baidu.com/s/1ZQ7HdKOsQYBJtwE_gj3H6g?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["烘焙"]}, {"name": "无水蜂蜜南瓜蛋糕技术配方教程", "link": "https://pan.baidu.com/s/1J7YmehJD2lTuhm0y8evvDA?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["烘焙"]}, {"name": "夏夏韩式厚蛋挞技术配方教程", "link": "https://pan.baidu.com/s/1sF8dLbU-iilptlwr1heikg?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["烘焙"]}, {"name": "鲜肉饼送手工冰粉技术配方教程", "link": "https://pan.baidu.com/s/1xk7lRuXPAQUszkPizhO13w?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面点", "饮品", "面食", "烘焙"]}, {"name": "香葱大饼技术配方教程", "link": "https://pan.baidu.com/s/14_wX-rA0BmDw7kIP49ZQ4Q?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面点", "烘焙"]}, {"name": "香掉牙千层饼技术配方教程", "link": "https://pan.baidu.com/s/1sl2m0qCEidyN9pH_Vkjz3w?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面点", "烘焙"]}, {"name": "小橙子黄油年糕简单快手批量生产火爆小吃美食技术配方教程", "link": "https://pan.baidu.com/s/1X3Cyki08eESNpAy5-XefWA?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["烘焙"]}, {"name": "小红书      小C 蛋卷教程技术配方教程", "link": "https://pan.baidu.com/s/1R7ma21rm6AhZZQEbD268iw?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["烘焙"]}, {"name": "小欢喜烤年糕技术配方教程", "link": "https://pan.baidu.com/s/1D8m_B7-sn8ah3NqoXD886g?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["烧烤", "烘焙"]}, {"name": "小敏烤苕技术配方教程", "link": "https://pan.baidu.com/s/1-2RjvmKvdxDEQOc_E10sLA?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["素食", "烧烤", "烘焙"]}, {"name": "养生八珍糕坚果糯米糕技术配方教程", "link": "https://pan.baidu.com/s/1ej1d4_Z4MFpFaztD67zchg?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["素食", "烘焙"]}, {"name": "玉米饼十套技术配方教程", "link": "https://pan.baidu.com/s/16_jmXLn1UlcmF6tvQCCsEA?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面点", "油炸", "烘焙"]}, {"name": "炸番薯油饼春卷技术配方教程", "link": "https://pan.baidu.com/s/1xTgvfaDZytDKB4HY7priLg?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面点", "油炸", "烘焙"]}, {"name": "正宗广式蒸粉蒸面河粉技术配方教程", "link": "https://pan.baidu.com/s/1h-qXuzFGZUSDG-0V0fatOQ?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面食", "烘焙"]}, {"name": "正宗老北京绿豆饼技术配方教程", "link": "https://pan.baidu.com/s/1CW2Idqdrbj7B_sbf_bWE3A?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面点", "烘焙"]}, {"name": "正宗天津泡泡炸糕技术配方教程", "link": "https://pan.baidu.com/s/1tR_YnO2-4oMVjuKeRAKOQw?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["油炸", "烘焙"]}, {"name": "正宗虾饼技术配方教程", "link": "https://pan.baidu.com/s/1MRSqayGr5b-FAR-df660zg?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["海鲜", "面点", "烘焙"]}, {"name": "紫米芋泥切糕技术配方教程", "link": "https://pan.baidu.com/s/103VrQbPJngIAoXrX5oIlpA?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["烘焙"]}, {"name": "粽子技术配方教程", "link": "https://pan.baidu.com/s/1ypRAJrCYBOlT9W8fqvzg0Q?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["烘焙"]}];
+function render() {
+const kw = document.getElementById('search').value.trim().toLowerCase();
+const res = data.filter(x=>x.name.toLowerCase().includes(kw));
+const list = document.getElementById('list');
+let html='';
+res.forEach(x=>{
+html+=`<div class="list-group-item">
+<div>${x.name}</div>
+<small>提取码：${x.pwd}</small><br>
+<a href="${x.link}" target="_blank" class="d-block my-2">获得该菜品百度网盘视频教学和配方文件</a>
+<div class="tips">温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间</div>
+</div>`;
+});
+list.innerHTML=html||'<div class="alert alert-info">暂无</div>';
+}
+render();
+</script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+new google.translate.TranslateElement({
+pageLanguage: 'zh-CN',
+includedLanguages: 'en,ja,ko,fr,de,es,pt,ru,ar,th,vi,id,ms,it,nl,pl,sv,tr,da,fi',
+layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

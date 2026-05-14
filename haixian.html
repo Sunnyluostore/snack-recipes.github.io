@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🐟 鱼虾海鲜｜小吃配方网盘教程</title>
+<meta name="description" content="🐟 鱼虾海鲜全套配方，商用摆摊/家用教程，网盘链接+提取码">
+<meta name="keywords" content="🐟 鱼虾海鲜,小吃配方,网盘教程">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://sunnyluostore.github.io/snack-recipes.github.io/haixian.html">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+.goog-te-banner-frame.skiptranslate {display:none !important;}
+body {top:0 !important;}
+.tips {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+    line-height: 1.4;
+}
+</style>
+</head>
+<body>
+<div class="container text-end mt-2">
+<div id="google_translate_element"></div>
+</div>
+<div class="container py-4">
+<a href="index.html" class="btn btn-sm btn-outline-secondary mb-3">← 返回首页</a>
+<h2 class="text-center mb-3">🐟 鱼虾海鲜</h2>
+<div class="input-group mb-4">
+<input id="search" class="form-control" placeholder="搜索当前分类">
+<button class="btn btn-primary" onclick="render()">搜索</button>
+</div>
+<div id="list" class="list-group"></div>
+</div>
+<footer class="container text-center py-3 text-muted">
+© 2026 小吃配方资源库｜仅供学习交流
+</footer>
+<script>
+const data = [{"name": "精品糟鱼技术配方教程", "link": "https://pan.baidu.com/s/1_MktvsabnhvfuY5YNHoFBg?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["海鲜", "卤味"]}, {"name": "爆炒田螺技术配方教程", "link": "https://pan.baidu.com/s/1lqh5T3UOI7F0XJCMWYvS_w?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["海鲜", "烧烤"]}, {"name": "地摊炸鱼、炸虾、炸鱿鱼(酥脆不回软)技术配方教程", "link": "https://pan.baidu.com/s/1suXx9MP1Lx26r3e9btktjQ?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["海鲜", "油炸"]}, {"name": "关东煮 章鱼烧技术配方教程", "link": "https://pan.baidu.com/s/1nb2JNRmtuZjvmkOZ9KGXww?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["海鲜", "烧烤"]}, {"name": "海鲜面技术配方教程", "link": "https://pan.baidu.com/s/1y9I7AoYazUwQPEvOK758DA?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["海鲜", "面食"]}, {"name": "绝味麻辣鱼块技术配方教程", "link": "https://pan.baidu.com/s/18oWXnGRD2ExPvCT0NxsfmQ?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["海鲜"]}, {"name": "烤生蚝技术配方教程", "link": "https://pan.baidu.com/s/1gSw0opPbyURSBGYpPQPMgw?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["海鲜", "烧烤"]}, {"name": "刘侠客·铁板鱿鱼(商用)技术配方教程", "link": "https://pan.baidu.com/s/1UJubNu7GoHTrvYX1Ygd3jA?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["海鲜", "烧烤"]}, {"name": "铁板鱿鱼技术配方教程", "link": "https://pan.baidu.com/s/1-S6QmkDkWvY2Y2ZZ354jcg?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["海鲜", "烧烤"]}, {"name": "五香酥鱼黄鱼技术配方教程", "link": "https://pan.baidu.com/s/1nvPuzaRwk_RQF6FurSNxPQ?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["海鲜"]}, {"name": "鲜炖花胶技术配方教程", "link": "https://pan.baidu.com/s/1ptBQeoXqowHfoxAAxEMqbQ?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["海鲜", "炖菜"]}, {"name": "新版酸菜鱼系列技术配方教程", "link": "https://pan.baidu.com/s/1ffSWWApMeLWOUCeXh7LguA?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["海鲜", "素食"]}, {"name": "章鱼小丸子技术配方教程", "link": "https://pan.baidu.com/s/1L05ewFvWHiQz61M3AWiTxw?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["海鲜"]}, {"name": "招牌鱼头捞饭技术配方教程", "link": "https://pan.baidu.com/s/1uib5TbFvLB0dlfr0MXFt4Q?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["海鲜", "饭类"]}, {"name": "正宗虾饼技术配方教程", "link": "https://pan.baidu.com/s/1MRSqayGr5b-FAR-df660zg?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["海鲜", "面点", "烘焙"]}, {"name": "纸包鱼技术配方教程", "link": "https://pan.baidu.com/s/1pL1XtXSWdxfnBNegmNF0Hg?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["海鲜"]}];
+function render() {
+const kw = document.getElementById('search').value.trim().toLowerCase();
+const res = data.filter(x=>x.name.toLowerCase().includes(kw));
+const list = document.getElementById('list');
+let html='';
+res.forEach(x=>{
+html+=`<div class="list-group-item">
+<div>${x.name}</div>
+<small>提取码：${x.pwd}</small><br>
+<a href="${x.link}" target="_blank" class="d-block my-2">获得该菜品百度网盘视频教学和配方文件</a>
+<div class="tips">温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间</div>
+</div>`;
+});
+list.innerHTML=html||'<div class="alert alert-info">暂无</div>';
+}
+render();
+</script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+new google.translate.TranslateElement({
+pageLanguage: 'zh-CN',
+includedLanguages: 'en,ja,ko,fr,de,es,pt,ru,ar,th,vi,id,ms,it,nl,pl,sv,tr,da,fi',
+layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

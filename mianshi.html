@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🍝 面食类｜小吃配方网盘教程</title>
+<meta name="description" content="🍝 面食类全套配方，商用摆摊/家用教程，网盘链接+提取码">
+<meta name="keywords" content="🍝 面食类,小吃配方,网盘教程">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://sunnyluostore.github.io/snack-recipes.github.io/mianshi.html">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+.goog-te-banner-frame.skiptranslate {display:none !important;}
+body {top:0 !important;}
+.tips {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+    line-height: 1.4;
+}
+</style>
+</head>
+<body>
+<div class="container text-end mt-2">
+<div id="google_translate_element"></div>
+</div>
+<div class="container py-4">
+<a href="index.html" class="btn btn-sm btn-outline-secondary mb-3">← 返回首页</a>
+<h2 class="text-center mb-3">🍝 面食类</h2>
+<div class="input-group mb-4">
+<input id="search" class="form-control" placeholder="搜索当前分类">
+<button class="btn btn-primary" onclick="render()">搜索</button>
+</div>
+<div id="list" class="list-group"></div>
+</div>
+<footer class="container text-center py-3 text-muted">
+© 2026 小吃配方资源库｜仅供学习交流
+</footer>
+<script>
+const data = [{"name": "拌面技术配方教程", "link": "https://pan.baidu.com/s/1AbSEHq4NItBxD9-1BqxVKg?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面食"]}, {"name": "北京炸酱面技术配方教程", "link": "https://pan.baidu.com/s/1yvgSzvCyJQ6SGGUQGjZmcQ?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["油炸", "卤味", "面食", "酱料"]}, {"name": "潮汕牛肉拌面技术配方教程", "link": "https://pan.baidu.com/s/1czKCQJcXPeQKyqip0ZMOTw?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["牛肉", "面食"]}, {"name": "潮汕原味汤粉王技术配方教程", "link": "https://pan.baidu.com/s/1cCmuc2Ae4f1MfNCuIbddRA?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面食"]}, {"name": "打卤面技术配方教程", "link": "https://pan.baidu.com/s/1imvIWHKEdUhSPMA1rInsww?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["卤味", "面食"]}, {"name": "大碗面老碗面配方技术配方教程", "link": "https://pan.baidu.com/s/1x53o9J3VEU8_hm5QYMr9Ig?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面食"]}, {"name": "蜂蜜小面包技术配方教程", "link": "https://pan.baidu.com/s/1vpA7P9hJEYxVykW0COq_CA?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面食", "烘焙"]}, {"name": "桂林米粉技术配方教程", "link": "https://pan.baidu.com/s/13Ofq-wh8XJq6p6_2JFC6gQ?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面食"]}, {"name": "海鲜面技术配方教程", "link": "https://pan.baidu.com/s/1y9I7AoYazUwQPEvOK758DA?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["海鲜", "面食"]}, {"name": "饸饹面配方技术配方教程", "link": "https://pan.baidu.com/s/1ClypcD-BzWM5_X6hhc_RbQ?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面食"]}, {"name": "红姐焖面线下教学课程技术配方教程", "link": "https://pan.baidu.com/s/1shhcG7UwXSqcHwGkZWLuIg?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面食"]}, {"name": "剪粉技术配方教程", "link": "https://pan.baidu.com/s/1j7tmZ99tN4wTqC2RQyow9g?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面食"]}, {"name": "晋韩记刀削面技术配方教程", "link": "https://pan.baidu.com/s/1DNAmhk2FDqMuza1ngwh1mg?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面食"]}, {"name": "辣子鸡拌面技术配方教程", "link": "https://pan.baidu.com/s/12hCjIcTVH2TZfoY3BQji3w?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面食"]}, {"name": "老面炸油饼技术配方教程", "link": "https://pan.baidu.com/s/1ldwwNbKIdQ5b-q8UYtYPSw?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面点", "油炸", "面食", "烘焙"]}, {"name": "米线技术配方技术配方教程", "link": "https://pan.baidu.com/s/16nLeNposVxpNhZKNGCeyOA?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面食"]}, {"name": "牛腩面技术配方教程", "link": "https://pan.baidu.com/s/1iKDz-ve86t1lrdKeWxXRsg?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["牛肉", "面食"]}, {"name": "牛肉拉面技术配方教程", "link": "https://pan.baidu.com/s/19hD9BO0OW5Lr4E1xiLOfTQ?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["牛肉", "面食"]}, {"name": "茄汁面技术配方教程", "link": "https://pan.baidu.com/s/1Jqgysb6Qk0cWO9JfbhL0BQ?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面食"]}, {"name": "苏式汤面技术配方教程", "link": "https://pan.baidu.com/s/1Vm1WHMEO9BO9-62xCf0g7Q?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面食"]}, {"name": "酸辣粉重庆技术配方教程", "link": "https://pan.baidu.com/s/16p7-cOIIpC-zH9MNAMGrqA?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面食"]}, {"name": "特色羊汤羊肉面馆技术配方教程", "link": "https://pan.baidu.com/s/1SFTMWpw2Bmt8jEYKXxXrKQ?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面食", "炖菜"]}, {"name": "鲜肉饼送手工冰粉技术配方教程", "link": "https://pan.baidu.com/s/1xk7lRuXPAQUszkPizhO13w?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面点", "饮品", "面食", "烘焙"]}, {"name": "鸭血粉丝汤技术配方教程", "link": "https://pan.baidu.com/s/1M1Bk8bTuZqYihQsBex0DOw?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面食"]}, {"name": "原味汤粉王技术配方教程", "link": "https://pan.baidu.com/s/1jHSmHLzFTHJoXuqyCrcgyw?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面食"]}, {"name": "云南老面千层破酥包技术配方教程", "link": "https://pan.baidu.com/s/1jHTqgJGULzQCPniPJ_tvgg?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面点", "面食"]}, {"name": "招远市甄谷乐老式面食技术配方教程", "link": "https://pan.baidu.com/s/1Rr9IpuOXB5wZabexLJ6IOw?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面食"]}, {"name": "正宗广式蒸粉蒸面河粉技术配方教程", "link": "https://pan.baidu.com/s/1h-qXuzFGZUSDG-0V0fatOQ?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面食", "烘焙"]}, {"name": "重庆小面技术配方教程", "link": "https://pan.baidu.com/s/1xatYEgtVPW78Q9UOCgTJxw?pwd=wx8g", "pwd": "wx8g", "tips": "温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间", "tags": ["面食"]}];
+function render() {
+const kw = document.getElementById('search').value.trim().toLowerCase();
+const res = data.filter(x=>x.name.toLowerCase().includes(kw));
+const list = document.getElementById('list');
+let html='';
+res.forEach(x=>{
+html+=`<div class="list-group-item">
+<div>${x.name}</div>
+<small>提取码：${x.pwd}</small><br>
+<a href="${x.link}" target="_blank" class="d-block my-2">获得该菜品百度网盘视频教学和配方文件</a>
+<div class="tips">温馨提示视频文件较多，转存到百度网盘app再查看教学视频，可以不占用手机存储空间</div>
+</div>`;
+});
+list.innerHTML=html||'<div class="alert alert-info">暂无</div>';
+}
+render();
+</script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+new google.translate.TranslateElement({
+pageLanguage: 'zh-CN',
+includedLanguages: 'en,ja,ko,fr,de,es,pt,ru,ar,th,vi,id,ms,it,nl,pl,sv,tr,da,fi',
+layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
